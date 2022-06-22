@@ -1,0 +1,42 @@
+.message {
+    width: 300px;
+    height: 100px;
+    background-color: chartreuse;
+    display: flex;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin: 35px 0 0 5px;
+    box-shadow: 1px 1px 1px 1px darkgreen;
+}
+
+.title {
+    width: 100%;
+    background: black;
+    opacity: 0.8;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.name {
+    color: blueviolet;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.mes {
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.time {
+    text-align: right;
+    color: gray;
+    font-size: 16px;
+    padding-right: 5px;
+}
