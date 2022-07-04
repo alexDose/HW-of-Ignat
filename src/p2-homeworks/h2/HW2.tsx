@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
-import affairs from "./Affairs";
 
 // types
 export type AffairPriorityType = "low" | "middle" | "high"
@@ -21,19 +20,20 @@ const defaultAffairs: Array<AffairType> = [
 ]
 
 // pure helper functions
-export const filterAffairs = (affairs: Array<AffairType>, filter: string): any => { // need to fix any
-    let newAffairs = affairs
+export const filterAffairs = (affairs: Array<AffairType>, filter: string): Array<AffairType> => { // need to fix any
     if (filter === "all") {
-        return newAffairs
+        return affairs
     } else if (filter === "low") {
        return affairs.filter(el => el.priority === "low")
     } else if (filter === "middle") {
-        return newAffairs = affairs.filter(el => el.priority === "middle")
+        return affairs.filter(el => el.priority === "middle")
     } else if (filter === "high") {
-         return newAffairs = affairs.filter(el => el.priority === "high")
+         return affairs.filter(el => el.priority === "high")
     }
+    return affairs
 }
-export const deleteAffair = (affairs: Array<AffairType>, _id: number): any => { // need to fix any
+
+export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
     return affairs.filter(el => el._id !== _id)
 }
 
