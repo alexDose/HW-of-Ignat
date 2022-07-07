@@ -4,7 +4,7 @@ import {AffairType, FilterType} from './HW2'
 
 type AffairsPropsType = {
     data: Array<AffairType>
-    setFilter: (value: FilterType) => void
+    setFilter: (filter: FilterType) => void
     deleteAffairCallback: (_id: number) => void
 }
 
