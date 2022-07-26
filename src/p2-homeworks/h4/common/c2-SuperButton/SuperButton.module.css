@@ -5,3 +5,11 @@
 .red {
     background: red;
 }
+
+button:focus {
+    outline: 3px solid salmon;
+}
+
+button:disabled {
+    color: darkorange;
+}

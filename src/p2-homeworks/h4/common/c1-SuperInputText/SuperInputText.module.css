@@ -7,6 +7,10 @@
     background: red;
 }
 
+input:focus {
+    outline: 3px solid fuchsia;
+}
+
 .error {
     color: red;
 }
